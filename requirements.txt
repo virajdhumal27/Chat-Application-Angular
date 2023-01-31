@@ -1,0 +1,4 @@
+npm install init
+npm install --save express
+npm install socket.io
+npm install moment
