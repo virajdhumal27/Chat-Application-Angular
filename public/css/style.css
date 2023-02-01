@@ -6,13 +6,12 @@ body {
 .header {
     margin-top: 12px;
     font-size: 30px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     text-align: center;
 }
 
 .container {
     max-width: 955px;
-    /* background-color: red; */
+    background-color: rgb(201, 201, 255);
     border: 2px solid black;
     border-radius: 13px;
     margin: auto;
@@ -34,11 +33,13 @@ body {
 .left {
     float: left;
     clear: both;
+    background-color: white;
 }
 
 .right {
     float: right;
     clear: both;
+    background-color: rgb(167, 253, 167);
 }
 
 .centerUserConnection {
@@ -47,8 +48,10 @@ body {
     clear: both;
     margin: 20px;
     background-color: red;
+    border: 1px solid black;
     color: white;
     border-radius: 13px;
+    font-style: italic;
 }
 
 #send-container {
@@ -69,6 +72,6 @@ body {
     cursor: pointer;
     border: 2px solid black;
     border-radius: 6px;
-    height: 34px;
     padding: 10px;
+    font-size: 15px;
 }

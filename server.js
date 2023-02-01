@@ -7,9 +7,7 @@ const io = require('socket.io')(8000, {
 const users = {};
 
 io.on('connection', socket => {
-    // console.log(socket.id);
     socket.on('new-user-joined', username => {
-        // console.log('New user: ', username);
         users[socket.id] = username;
         socket.broadcast.emit('user-joined', username);
     });
