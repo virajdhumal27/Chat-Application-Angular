@@ -1,11 +1,12 @@
 body {
     height: 100vh;
+    font-family: 'Roboto Slab', serif;
 }
 
 .header {
     margin-top: 12px;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     text-align: center;
 }
 
@@ -40,6 +41,16 @@ body {
     clear: both;
 }
 
+.centerUserConnection {
+    display: block;
+    text-align: center;
+    clear: both;
+    margin: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 13px;
+}
+
 #send-container {
     display: block;
     margin: auto;
@@ -59,4 +70,5 @@ body {
     border: 2px solid black;
     border-radius: 6px;
     height: 34px;
+    padding: 10px;
 }
