@@ -2,10 +2,18 @@ body {
     height: 100vh;
 }
 
+.header {
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
 .container {
     max-width: 955px;
     /* background-color: red; */
     border: 2px solid black;
+    border-radius: 13px;
     margin: auto;
     height: 60vh;
     padding: 33px;
