@@ -1,3 +1,4 @@
+const express = require("express")
 const io = require('socket.io')(8000, {
     cors: {
         origin: '*'
@@ -5,6 +6,8 @@ const io = require('socket.io')(8000, {
 });
 
 const users = {};
+const app = express()
+app.use(express.static('/public'))
 
 io.on('connection', socket => {
     socket.on('new-user-joined', username => {
@@ -21,3 +24,6 @@ io.on('connection', socket => {
         delete users[socket.id];
     });
 });
+
+
+app.listen(8000, () => console.log('Server Running'));
