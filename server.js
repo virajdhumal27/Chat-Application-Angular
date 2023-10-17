@@ -1,5 +1,5 @@
 const express = require("express")
-const io = require('socket.io')(9999, {
+const io = require('socket.io')(8000, {
     cors: {
         origin: '*'
     }
@@ -26,4 +26,4 @@ io.on('connection', socket => {
 });
 
 
-app.listen(9999, () => console.log('Server Running'));
+app.listen(8000, () => console.log('Server Running'));
